@@ -1,6 +1,6 @@
-// Given a rod of length N inches and an array of prices, price[]. price[i] denotes the value of a piece
-// of length i. Determine the maximum value obtainable by cutting up the rod and selling the pieces.
-// Note: Consider 1-based indexing.
+// Given a rod of length N inches and an array of prices, price[]. price[i] denotes the
+// value of a piece of length i. Determine the maximum value obtainable by cutting up the
+// rod and selling the pieces. Note: Consider 1-based indexing.
 
 // Example:
 // Input:  N = 8

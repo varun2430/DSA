@@ -1,7 +1,7 @@
-// Given a set of N items, each with a weight and a value, represented by the array w[] and val[]
-// respectively. Also, a knapsack with weight limit W.
-// The task is to fill the knapsack in such a way that we can get the maximum profit. Return the
-// maximum profit.
+// Given a set of N items, each with a weight and a value, represented by the array w[]
+// and val[] respectively. Also, a knapsack with weight limit W.
+// The task is to fill the knapsack in such a way that we can get the maximum profit.
+// Return the maximum profit.
 // Note: Each item can be taken any number of times.
 
 // Example:
@@ -15,7 +15,8 @@ using namespace std;
 
 int solve_m(int index, int maxWeight, int val[], int wt[], vector<vector<int>> &dp)
 {
-    // for the last remaining item return the value of maximum number of items that can be returned
+    // for the last remaining item return the value of maximum number of items that can be
+    // returned
     if (index == 0)
     {
         return (maxWeight / wt[0]) * val[0];

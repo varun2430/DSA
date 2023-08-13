@@ -1,7 +1,8 @@
-// Given two strings text1 and text2, return the length of their longest common subsequence. If there
-// is no common subsequence, return 0.
-// A subsequence of a string is a new string generated from the original string with some characters
-// (can be none) deleted without changing the relative order of the remaining characters.
+// Given two strings text1 and text2, return the length of their longest common subsequence.
+// If there is no common subsequence, return 0.
+// A subsequence of a string is a new string generated from the original string with some
+// characters (can be none) deleted without changing the relative order of the remaining
+// characters.
 // For example, "ace" is a subsequence of "abcde".
 // A common subsequence of two strings is a subsequence that is common to both strings.
 
@@ -11,6 +12,16 @@
 
 #include <bits/stdc++.h>
 using namespace std;
+
+// applications:
+//   1. longest palindromic subsequence: we can find the lcs of the given string and
+//      reverse of the given string to get longest palindromic subsequence
+//   2. minimum insertions to make string palindrome: length of the given string - length 
+//      of longest palindromic subsequence in the given string
+//   3. minimum insertions/deletions to convert string a to string b: (length of a - length
+//      of lcs) + (length of b - length of lcs)
+//   4. shortest common supersequence: small modification to the lcs printing code where
+//      we also print the characters that are not common
 
 int solve_m(int i, int j, string &text1, string &text2, vector<vector<int>> &dp)
 {
