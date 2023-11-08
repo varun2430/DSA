@@ -4,6 +4,11 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// bfs approach:
+// perform topological sort using kahn's algorithm
+// if the sequence produced has V elements then there is no cycle
+// if the sequence produced has less than V elements then there is a cycle
+
 bool dfs(int vertex, vector<int> adj[], vector<bool> &visited, vector<bool> &pathVisited)
 {
     visited[vertex] = true;

@@ -8,6 +8,11 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// bfs approach:
+// reverse the edges in the graph
+// perform kahn's algorithm on the resultant graph
+// the sequence we get are the safe nodes
+
 bool dfs(int node, vector<int> adj[], vector<bool> &visited, vector<bool> &pathVis, vector<bool> &safe)
 {
     visited[node] = true;
